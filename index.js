@@ -1,8 +1,8 @@
 /*
  事件管理和DOM操作
  */
-var $ = window._hz_$;//实现全局唯一,暂时用这个恶心的方式
-if (!$) $ = window._hz_$ = (function () {
+var $;//实现全局唯一,暂时用这个恶心的方式
+if (!$) $ = (function () {
     "use strict";
     /*cache结构为：
      {元素键值1:{click:[callback1,callback2],touchend:[{fn:fn}]}
